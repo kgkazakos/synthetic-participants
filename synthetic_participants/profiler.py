@@ -4,7 +4,7 @@ Optional LLM enrichment for synthetic participants.
 No API keys are required for core functionality. This module is only
 invoked when the --llm-backend flag is supplied via the CLI.
 
-Supported backends: anthropic (claude-haiku), openai (gpt-4o-mini), gemini (gemini-2.0-flash)
+Supported backends: anthropic (claude-haiku), openai (gpt-4o-mini), gemini (gemini-3.6-flash)
 """
 
 from __future__ import annotations
@@ -98,7 +98,7 @@ def _call_gemini(prompt: str, model: str) -> str:
 _BACKENDS = {
     "anthropic": (_call_anthropic, "claude-haiku-20240307"),
     "openai": (_call_openai, "gpt-4o-mini"),
-    "gemini": (_call_gemini, "gemini-2.0-flash"),
+    "gemini": (_call_gemini, "gemini-3.6-flash"),
 }
 
 # ── Public API ────────────────────────────────────────────────────────────────

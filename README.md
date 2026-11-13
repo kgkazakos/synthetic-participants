@@ -62,7 +62,7 @@ With optional LLM backends:
 ```bash
 pip install "synthetic-participants[anthropic]"   # claude-haiku
 pip install "synthetic-participants[openai]"      # gpt-4o-mini
-pip install "synthetic-participants[gemini]"      # gemini-2.0-flash
+pip install "synthetic-participants[gemini]"      # gemini-3.6-flash
 pip install "synthetic-participants[all]"         # all three
 ```
 
@@ -208,7 +208,7 @@ All commands support `--json-output`. Enums serialise as strings. `narrative` is
 |---|---|---|
 | `anthropic` | `claude-haiku-20240307` | `ANTHROPIC_API_KEY` |
 | `openai` | `gpt-4o-mini` | `OPENAI_API_KEY` |
-| `gemini` | `gemini-2.0-flash` | `GOOGLE_API_KEY` |
+| `gemini` | `gemini-3.6-flash` | `GOOGLE_API_KEY` |
 
 The rule-based core is complete without LLM enrichment.
 
